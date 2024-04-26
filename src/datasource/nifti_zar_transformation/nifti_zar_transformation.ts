@@ -24,4 +24,4 @@ const zarr = new nifti_backend.registerPromiseRPC(GET_ZARR_VOLUME_INFO_RPC_ID);
 // Call to download function in zarr.backend.ts to convert to zarr format
 const zarrVolumeChunkSource = new zarr_backend.ZarrVolumeChunkSource();
 const cancellationToken = new CancellationTokenSource();
-zarrVolumeChunkSource.download(zarrVolumeChunkSource, cancellationToken);
+zarrVolumeChunkSource.download(VolumeChunk, cancellationToken);
